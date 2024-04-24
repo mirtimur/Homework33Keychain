@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB03F6592BD913B3002C5662 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB03F6582BD913B3002C5662 /* SplashViewController.swift */; };
 		AB441C6A2BC92BFB00E3FCFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB441C692BC92BFB00E3FCFE /* AppDelegate.swift */; };
 		AB441C6E2BC92BFB00E3FCFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB441C6D2BC92BFB00E3FCFE /* ViewController.swift */; };
 		AB441C712BC92BFB00E3FCFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB441C6F2BC92BFB00E3FCFE /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB03F6582BD913B3002C5662 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		AB441C662BC92BFB00E3FCFE /* Homework33Keychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework33Keychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB441C692BC92BFB00E3FCFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB441C6D2BC92BFB00E3FCFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				AB441C6D2BC92BFB00E3FCFE /* ViewController.swift */,
 				AB441C7D2BC93B5000E3FCFE /* SecondViewController.swift */,
 				AB441C812BC97B3100E3FCFE /* KeychainController.swift */,
+				AB03F6582BD913B3002C5662 /* SplashViewController.swift */,
 				AB441C6F2BC92BFB00E3FCFE /* Main.storyboard */,
 				AB441C7F2BC93B6500E3FCFE /* SecondViewController.storyboard */,
 				AB441C722BC92BFC00E3FCFE /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 				AB441C822BC97B3100E3FCFE /* KeychainController.swift in Sources */,
 				AB441C6E2BC92BFB00E3FCFE /* ViewController.swift in Sources */,
 				AB441C6A2BC92BFB00E3FCFE /* AppDelegate.swift in Sources */,
+				AB03F6592BD913B3002C5662 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

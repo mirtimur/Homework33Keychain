@@ -11,8 +11,6 @@ class SecondViewController: UIViewController {
     let password = KeychainController.shared.getValue(for: "Password")
     let key = KeychainController.shared.getValue(for: "Key")
     
-    var keyModel: ViewController?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
