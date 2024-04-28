@@ -20,6 +20,18 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: true)
+        deleteKeychainValues()
+        openLoginController()
+    }
+    
+    private func deleteKeychainValues() {
+        KeychainController.shared.removeValue(for: "Login")
+    }
+    
+    private func openLoginController() {
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = mainStoryBoard.instantiateViewController(withIdentifier: "LoginViewController")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = loginViewController
     }
 }

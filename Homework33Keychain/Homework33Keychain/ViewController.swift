@@ -8,10 +8,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        print(KeychainController.shared.getValue(for: "Login"))
-//        print(KeychainController.shared.getValue(for: "Password"))
-//        KeychainController.shared.clean()
+ 
         buttonConfidure()
     }
     
@@ -28,13 +25,13 @@ class ViewController: UIViewController {
     }
     
     func addNotification() {
-        let message = "Notification!"
+        let message = "Please log back in to your account!"
         let content = UNMutableNotificationContent()
         content.body = message
         content.sound = UNNotificationSound.default
-        var dateComponents = DateComponents()
-        dateComponents.hour = 20
-        dateComponents.minute = 46
+        let date = Calendar.current.startOfDay(for: Date())
+        let tomorrow = date + (60*60*24)
+        let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: tomorrow)
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         let request = UNNotificationRequest(identifier: "identifier", content: content, trigger: trigger)
         let center = UNUserNotificationCenter.current()
@@ -50,6 +47,4 @@ class ViewController: UIViewController {
             presentSecondViewController()
         }
     }
-    
 }
-
