@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB03F6592BD913B3002C5662 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB03F6582BD913B3002C5662 /* SplashViewController.swift */; };
 		AB441C6A2BC92BFB00E3FCFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB441C692BC92BFB00E3FCFE /* AppDelegate.swift */; };
 		AB441C6E2BC92BFB00E3FCFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB441C6D2BC92BFB00E3FCFE /* ViewController.swift */; };
 		AB441C712BC92BFB00E3FCFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB441C6F2BC92BFB00E3FCFE /* Main.storyboard */; };
 		AB441C732BC92BFC00E3FCFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB441C722BC92BFC00E3FCFE /* Assets.xcassets */; };
 		AB441C762BC92BFC00E3FCFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB441C742BC92BFC00E3FCFE /* LaunchScreen.storyboard */; };
+		AB441C7E2BC93B5000E3FCFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB441C7D2BC93B5000E3FCFE /* SecondViewController.swift */; };
+		AB441C802BC93B6500E3FCFE /* SecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB441C7F2BC93B6500E3FCFE /* SecondViewController.storyboard */; };
+		AB441C822BC97B3100E3FCFE /* KeychainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB441C812BC97B3100E3FCFE /* KeychainController.swift */; };
+		AB441C852BC97C2F00E3FCFE /* SwiftyKeychainKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB441C842BC97C2F00E3FCFE /* SwiftyKeychainKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB03F6582BD913B3002C5662 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		AB441C662BC92BFB00E3FCFE /* Homework33Keychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework33Keychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB441C692BC92BFB00E3FCFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB441C6D2BC92BFB00E3FCFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,9 @@
 		AB441C722BC92BFC00E3FCFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB441C752BC92BFC00E3FCFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB441C772BC92BFC00E3FCFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB441C7D2BC93B5000E3FCFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AB441C7F2BC93B6500E3FCFE /* SecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondViewController.storyboard; sourceTree = "<group>"; };
+		AB441C812BC97B3100E3FCFE /* KeychainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB441C852BC97C2F00E3FCFE /* SwiftyKeychainKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +66,11 @@
 			children = (
 				AB441C692BC92BFB00E3FCFE /* AppDelegate.swift */,
 				AB441C6D2BC92BFB00E3FCFE /* ViewController.swift */,
+				AB441C7D2BC93B5000E3FCFE /* SecondViewController.swift */,
+				AB441C812BC97B3100E3FCFE /* KeychainController.swift */,
+				AB03F6582BD913B3002C5662 /* SplashViewController.swift */,
 				AB441C6F2BC92BFB00E3FCFE /* Main.storyboard */,
+				AB441C7F2BC93B6500E3FCFE /* SecondViewController.storyboard */,
 				AB441C722BC92BFC00E3FCFE /* Assets.xcassets */,
 				AB441C742BC92BFC00E3FCFE /* LaunchScreen.storyboard */,
 				AB441C772BC92BFC00E3FCFE /* Info.plist */,
@@ -80,6 +94,9 @@
 			dependencies = (
 			);
 			name = Homework33Keychain;
+			packageProductDependencies = (
+				AB441C842BC97C2F00E3FCFE /* SwiftyKeychainKit */,
+			);
 			productName = Homework33Keychain;
 			productReference = AB441C662BC92BFB00E3FCFE /* Homework33Keychain.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +125,9 @@
 				Base,
 			);
 			mainGroup = AB441C5D2BC92BFB00E3FCFE;
+			packageReferences = (
+				AB441C832BC97C2F00E3FCFE /* XCRemoteSwiftPackageReference "SwiftyKeychainKit" */,
+			);
 			productRefGroup = AB441C672BC92BFB00E3FCFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -123,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB441C762BC92BFC00E3FCFE /* LaunchScreen.storyboard in Resources */,
+				AB441C802BC93B6500E3FCFE /* SecondViewController.storyboard in Resources */,
 				AB441C732BC92BFC00E3FCFE /* Assets.xcassets in Resources */,
 				AB441C712BC92BFB00E3FCFE /* Main.storyboard in Resources */,
 			);
@@ -135,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB441C7E2BC93B5000E3FCFE /* SecondViewController.swift in Sources */,
+				AB441C822BC97B3100E3FCFE /* KeychainController.swift in Sources */,
 				AB441C6E2BC92BFB00E3FCFE /* ViewController.swift in Sources */,
 				AB441C6A2BC92BFB00E3FCFE /* AppDelegate.swift in Sources */,
+				AB03F6592BD913B3002C5662 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB441C832BC97C2F00E3FCFE /* XCRemoteSwiftPackageReference "SwiftyKeychainKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andriyslyusar/SwiftyKeychainKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB441C842BC97C2F00E3FCFE /* SwiftyKeychainKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB441C832BC97C2F00E3FCFE /* XCRemoteSwiftPackageReference "SwiftyKeychainKit" */;
+			productName = SwiftyKeychainKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB441C5E2BC92BFB00E3FCFE /* Project object */;
 }
